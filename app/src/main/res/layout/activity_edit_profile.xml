@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ih_hi.digitalbloodbank.EditProfile"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/donorNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:layout_margin="20dp"/>
+
+            <EditText
+                android:id="@+id/donorMobileET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:inputType="numberSigned"
+                android:hint="Mobile Number"
+                android:padding="5dp"
+                android:layout_margin="20dp"/>
+
+
+            <EditText
+                android:id="@+id/donorEmailET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:hint="Email"
+                android:padding="5dp"
+                android:layout_margin="20dp"/>
+
+            <EditText
+                android:id="@+id/donorLocationET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="Location"
+                android:padding="5dp"
+                android:layout_margin="20dp"/>
+
+            <Spinner
+                android:id="@+id/donorBloodSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Blood Group"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:layout_margin="20dp"/>
+
+            <EditText
+                android:id="@+id/donorAgeET"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="Age"
+                android:padding="5dp"
+                android:layout_margin="20dp"/>
+
+            <EditText
+                android:id="@+id/donorWeightET"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="Weight in Kg"
+                android:padding="5dp"
+                android:layout_margin="20dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/lastDateET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:hint="Last Date of Donate Blood"
+                    android:padding="5dp"
+                    android:layout_margin="20dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:layout_marginTop="18dp"
+                    android:id="@+id/selectDateBTN"/>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/saveBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginBottom="20dp"
+                android:text="Save"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
